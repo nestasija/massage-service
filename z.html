@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Запись</title>
+    <style>
+        label {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:rgb(255, 255, 255);
+            display: inline-block;
+        }
+        body{
+            padding: 350px 5%;
+            text-align: center;
+            background-image: url(kamn.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="sign" method="post">
+        <label>Ваше имя</label>
+        <input name="fio" id="fio" type="text" size="24" /><br />
+        <label>Выберите день</label>
+        <select name="data" id="data">
+        <option>1/07/2023</option>
+        <option>3/07/2023</option>
+        <option>4/07/2023</option>
+        <option>6/07/2023</option>
+        </select>
+        <br />
+        <label>Выберите время</label>
+        <select name="time" id="time">
+        <option>08:00</option>
+        <option>10:00</option>
+        <option>13:00</option>
+        <option>15:00</option>
+        </select>
+        <br/>
+        <input type="submit" value="Отправить">
+    </form>
+
+
+</body>
+</html>
